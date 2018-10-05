@@ -42,6 +42,7 @@ class Song
   end
   
   def self.alphabetical
+<<<<<<< HEAD
     @@all.sort_by do |person|
       person.name
     end
@@ -70,5 +71,12 @@ class Song
   
   def self.destroy_all
     @@all.clear
+=======
+  people = []
+  @@all.collect do |person|
+   people << person
+  end
+  people.sort
+>>>>>>> d5107edaebee7a09eabcc2e071a94718a9c8f196
   end
 end
